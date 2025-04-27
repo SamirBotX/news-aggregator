@@ -1,6 +1,5 @@
-// API Configuration
-const API_KEY =  '5ddae5165fd247d8985e36be1a85f821'; // Replace with your actual NewsAPI key
-let currentCategory = 'general';
+// App State
+let currentCategory = localStorage.getItem('newsCategory') || 'general';
 let currentPage = 1;
 let isSearching = false;
 let currentSearchQuery = '';
